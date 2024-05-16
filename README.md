@@ -5,3 +5,8 @@ Many works have sought to create LMs which can be extended to larger contexts du
 New embeddings such as ALiBi have been introduced to combat this issue, however, they often create decreased performance within the same context length.
 Because the rotations are the same between each set of positions in the context window there is little reason why RoPE should experience such a precipitous performance drop during inference. 
 Inspired by BERT-like methodologies, we propose using random offsets to the RoPE embeddings in order to force the model to learn about the rotations being performed such that the context window can be better expanded during inference.
+
+
+RoPE-NTK: https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/
+Reversed RoPE: https://github.com/Avelina9X/ReRoPE
+Rectified RoPE: https://github.com/bojone/rerope
